@@ -1,0 +1,532 @@
+@font-face {
+    font-family: Paris;
+    src: url(font/Paris\ Forbel\ TTF.ttf);
+}
+@font-face {
+    font-family: Apple;
+    src: url(font/AppleGaramond-Light.ttf);
+}
+@font-face {
+    font-family: AppleItalic;
+    src: url(font/AppleGaramond-Italic.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: radial-gradient(ellipse at top left, #3a4d5f 0%, #223344 60%, #181c22 100%);
+    height: 100vh;
+    background-attachment: fixed;
+    color: #f5f5f5;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+nav{
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+nav ul {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+nav ul li a{
+    font-family: Paris;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+nav ul li a:hover{
+    color: #ffffff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+}
+
+nav ul li .contato{
+    text-decoration: none;
+    font-size: 20px;
+    color: #b6d6f0;
+    text-shadow: 0 0 5px #436078, 0 0 10px #436078, 0 0 15px #436078, 0 0 20px #436078, 0 0 25px #ff8080;
+}
+nav ul li .contato:hover{
+    color: #b6d6f0;
+    text-shadow: 0 0 5px #b6d6f0, 0 0 10px #b6d6f0, 0 0 20px #b6d6f0, 0 0 30px #b6d6f0;
+}
+nav ul li {
+    display: inline;
+    margin: 10px;
+    font-size: 20px;
+    transition: transform 0.2s, opacity 0.5s;
+}
+ul li a{
+    transition: 0.4s;
+    display: block;
+}
+ul:hover li a{
+    opacity: 0.4;
+}
+nav ul li a:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}
+header{
+    text-align: center;
+    margin: 50px;
+    color: white;
+}
+header h1{
+    font-size:120px;
+    font-family: Apple;
+    margin-bottom: 30px;
+}
+header h2{
+    margin-top:30px;
+    margin-bottom: 20px;
+    font-size: 45px;
+    font-family: AppleItalic;
+    text-align: justify;
+}
+img{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+header .container{
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+#personagens{
+    color: white;
+}
+#personagens h1{
+    margin: 40px;
+    font-size: 80px;
+    text-align: center;
+    font-family: Apple;
+}
+#personagens h2{
+    margin: 20px;
+    font-size: 40px;
+}
+#personagens p{
+    margin: 20px;
+    font-size: 23px;
+    text-align: justify;
+}
+nav{
+    background-color: black;
+}
+
+h1 {
+    margin: 40px;
+    font-size: 80px;
+    text-align: center;
+    font-family: Apple;
+    color: white;
+}
+#narcoticos h2{
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+#narcoticos .card{
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    margin: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+.card h2{
+    text-align: center;
+}
+#narcoticos ul li{
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align:start;
+    list-style: none;
+}
+#narcoticos .card1{
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.topo{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 999px;
+    background-color: #181c2260;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+}
+#sinopse h1 {
+    margin: 0 0 30px 0;
+    font-size: 80px;
+    font-family: Apple;
+}
+
+#sinopse article {
+    max-width: 1200px;
+    padding: 20px;
+}
+
+#sinopse{   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#sinopse p {
+    font-size: 26px; 
+    line-height: 1.6;
+    color: #f0f8ff; 
+    border-left: 5px solid #b6d6f0;
+    padding-left: 25px;
+    margin: 0;
+    text-align: justify;
+}
+
+#autora h2 {
+    margin: 40px;
+    font-size: 50px;
+    text-align: center;
+    font-family: Apple;
+    color: white;
+}
+
+#autora p { 
+    font-size: 23px; 
+    line-height: 1.2;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+#autora .container1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#autora .container1 img{
+    width: 1000px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#narcoticos .flexcard{
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(4, 1fr);
+display: grid;
+gap: 20px;
+}
+
+#narcoticos .card1 
+{ grid-area: 1 / 1 / 3 / 3;
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    margin: 2px;
+}
+
+#narcoticos .card2 
+{ grid-area: 1 / 3 / 3 / 5;
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+}
+
+#narcoticos .card3
+{ grid-area: 1 / 5 / 3 / 7;
+    background-color: rgba(255, 255, 255, 0.336);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+}
+
+#narcoticos .card4 
+{ grid-area: 3 / 1 / 5 / 4; 
+background-color: rgba(255, 255, 255, 0.336);
+border-radius: 20px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.3);
+padding: 20px;
+}
+
+#narcoticos .card5
+{ grid-area: 3 / 4 / 5 / 7;
+  background-color: rgba(255, 255, 255, 0.336);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+}
+
+#personagens .parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+#personagens .parent article {
+    background-color: rgba(193, 218, 255, 0.418);
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.493);
+}
+
+#personagens .parent article:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s;
+    box-shadow: 0 0 10px #b6d6f0;
+}  
+
+#personagens .parent h2 {
+    padding: 10px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#personagens .parent p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+#busqueajuda p{
+    margin: 20px;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+}
+
+#busqueajuda h2{
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-family: Apple;
+}
+
+#busqueajuda ul li{
+    margin: 20px;
+    font-size: 20px;
+    list-style: none;
+    text-align: justify;
+    color: white;
+}
+
+#busqueajuda h3{
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-family: Apple;
+}
+#busqueajuda ul li.ultimo{
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+    font-size: 70px;
+    font-family: Apple;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+}
+#busqueajuda ul li.ultimo a {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    color: white;
+    opacity: 1;
+    transition: transform 0.5s;
+}
+
+#busqueajuda ul li.ultimo a:hover{
+    transform: scale(1.07);
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    
+    /* NAV BAR */
+    nav {
+        flex-direction: column; 
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0; 
+        text-align: center;
+        display: block; 
+    }
+    nav ul li .contato{
+        font-size: 15px;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    /* HEADER */
+    header {
+        margin: 30px 10px;
+    }
+
+    header h1 {
+        font-size: 70px; 
+    }
+
+    header h2 {
+        font-size: 28px; 
+        text-align: center; 
+    }
+    
+    header .container {
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    img {
+        width: 90%; 
+        max-width: 350px; 
+        margin: 20px auto 0;
+        display: block;
+    }
+
+    /* Títulos Gerais e Parágrafos */
+    h1 {
+        font-size: 55px;
+        margin: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #sinopse h1 {
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+
+    #sinopse p {
+        font-size: 20px;
+        padding-left: 15px;
+    }
+
+    /* AUTORA */
+    #autora h2 {
+        font-size: 35px;
+        margin: 20px;
+    }
+
+    #autora p {
+        font-size: 18px;
+        margin: 0 10px 20px 10px;
+    }
+
+    #autora .container1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #autora .container1 img {
+        width: 100%; 
+        display: flex;
+        margin: auto 0;
+        height: auto; 
+        margin-right: 0;
+    }
+
+    #personagens h1 {
+        font-size: 55px;
+    }
+    
+    #personagens .parent {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    #personagens .parent h2 {
+        font-size: 24px;
+    }
+    
+    /* NARCÓTICOS (Grid) */
+    #narcoticos h2 {
+        font-size: 26px;
+    }
+    
+    #narcoticos .flexcard {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+    
+    #narcoticos .card1,
+    #narcoticos .card2,
+    #narcoticos .card3,
+    #narcoticos .card4,
+    #narcoticos .card5 {
+        grid-area: unset;
+        margin: 0;
+    }
+    
+    #busqueajuda ul li.ultimo {
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    .topo{  
+        padding: 0.4rem 0.6rem;
+        font-size: 14px;
+        background-color: #181c2260;
+    }
+}
